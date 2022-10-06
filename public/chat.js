@@ -1,6 +1,8 @@
 
 const socket = io('http://localhost:3000');
 
+let user = null;
+
 socket.on('update_messages', (messages) => {
 
     updateMessagesOnScreen(messages)
@@ -12,7 +14,7 @@ function updateMessagesOnScreen(messages) {
 
     let list_messages = '<ul>'
     messages.forEach(message => {
-        list_messages += `<li>${message}</li>`
+        list_messages += `<li>${message.usr}: ${message.msg}</li>`
     })
     list_messages += '</ul>'
 
@@ -23,9 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('#message_form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
+
+        if (!user) {
+            alert('Set a user');
+            return;
+        }
+
         const message = document.forms['message_form_name']['msg'].value;
         document.forms['message_form_name']['msg'].value = '';
-        socket.emit('new_message', { msg: message })
+        socket.emit('new_message', { usr: user, msg: message });
+        console.log('message');
+    })
 
+    const userForm = document.querySelector('#user_form');
+    userForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        user = document.forms['user_form_name']['usr'].value;
+        userForm.parentNode.removeChild(userForm);
     })
 })
