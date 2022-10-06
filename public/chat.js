@@ -1,5 +1,5 @@
-
-const socket = io('http://localhost:3000');
+const room = window.location.pathname.replace(/\//g, '');
+const socket = io(`http://localhost:3000/${room}`);
 
 let user = null;
 
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = document.forms['message_form_name']['msg'].value;
         document.forms['message_form_name']['msg'].value = '';
         socket.emit('new_message', { usr: user, msg: message });
-        console.log('message');
     })
 
     const userForm = document.querySelector('#user_form');
