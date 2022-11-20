@@ -20,8 +20,7 @@
 }
 
 body {
-  background-image: url(../public/assets/images/space-bgd.jpg);
-  backdrop-filter: blur(px);
+  background-image: url(../public/assets/images/space-bg.jpg);
 }
 
 .container {
