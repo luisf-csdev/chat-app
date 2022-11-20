@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const cors = require('cors');
-const PORT = 3001;
+const PORT = process.env.PORT || 8080;
 const { Server } = require('socket.io');
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -10,6 +10,12 @@ const io = new Server(server, {
         origin: 'http://localhost:3000',
         methods: ['GET', 'POST']
     }
+});
+
+app.use(cors());
+
+app.get('/', (req, res) => {
+    res.send({ serverRunning: true })
 });
 
 io.on('connection', (socket) => {
@@ -26,9 +32,6 @@ io.on('connection', (socket) => {
         console.log(`User with ID ${socket.id} disconnected`);
     })
 });
-
-app.use(cors());
-
 
 server.listen(PORT, () => {
     console.log(`SERVER RUNNING ON PORT ${PORT}`)
