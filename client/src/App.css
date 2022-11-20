@@ -21,7 +21,6 @@
 
 body {
   background-image: url(../public/assets/images/space-bgdb.jpg);
-  backdrop-filter: blur(px);
 }
 
 .container {
