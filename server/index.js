@@ -7,7 +7,7 @@ const { Server } = require('socket.io');
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'https://chat-rooms-socket.netlify.app/',
+        origin: 'https://chat-rooms-socket.netlify.app',
         methods: ['GET', 'POST']
     }
 });

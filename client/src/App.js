@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import { useState } from 'react'
 import Chat from './components/Chat';
 
-const ENDPOINT = 'https://chat-rooms-server.fly.dev/'
+const ENDPOINT = 'https://chat-rooms-server.fly.dev'
 const socket = io.connect(ENDPOINT);
 
 
