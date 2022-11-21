@@ -11,12 +11,13 @@
 
 <h4 align="center">
     <a href="#features">Features</a> •
-    <a href="#try-it-yourself">Run the app</a> •
-    <a href="#%EF%B8%8F-requisites">Prerequisites</a> •
-    <a href="#%EF%B8%8F-requisites">Clone repo</a> •
-    <a href="#-tech-stack">Stacks</a> •
-    <a href="#-contribution">Author</a>
+    <a href="#try-it-yourself">App Demo</a> •
+    <a href="#prerequisites">Prerequisites</a> •
+    <a href="#clone-repository">Clone Repository</a> •
+    <a href="#stacks">Stacks</a> •
+    <a href="#excelsior-code-by-luís-felipe">Author</a>
 </h4>
+<br>
 
 ## 📌 Features
 - [x] Real-time chat with Web Sockets
@@ -28,9 +29,9 @@
 
 ## [⚡TRY IT YOURSELF⚡](https://chat-rooms-socket.netlify.app/)
 <div align="center">
-    <img alt="print" width="450rem" src="./github/chat-rooms-print1">
-    <img alt="gif-1" width="450rem" src="./github/chat-rooms-print2"><br>
-    <img alt="gif-2" width="800rem"  src="./github/chat-rooms-gif">
+    <img alt="print" height='500rem' src="./github/chat-rooms-print1.png">
+    <img alt="gif-1" height='500rem' src="./github/chat-rooms-print2.png"><br>
+    <img alt="gif-2" width="900rem"  src="./github/chat-rooms-gif.gif">
 </div>
 
 ## 
@@ -42,6 +43,7 @@ You'll need to have the following tools installed on your machine:
 - [Node.js](https://nodejs.org/)
 
 Also, use your preferred code editor.
+<br>
 
 ## 🪢 Clone Repository
 #### Note: This project has both front and backend; which means you'll have to install the dependencies and execute the start commands in each folder (client and server). 
@@ -73,6 +75,7 @@ npm start
 
 # the app will start in port:3000 - access <http://localhost:3000>
 ```
+<br>
 
 ## 💽 Stacks
 <span>
@@ -91,8 +94,9 @@ npm start
     <img alt="luisf-docker" height="70rem" width="100rem" 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg">
         <a href='https://www.docker.com/'>Docker</a>
-</span><br><br>
+</span><br><br><br>
 
+<hr>
 <h4 align="center"> Excelsior code by Luís Felipe
 
 [🪐 See my LinkedIn 🪐](https://www.linkedin.com/in/luisf-csdev/)
