@@ -10,12 +10,12 @@
 <p align="center">⚡ Real-time chat app that allows the user to create a room and chat with anyone inside the same room 💬</p>
 
 <h4 align="center">
-    <a href="#features">Features</a> •
+    <a href="#-features">Features</a> •
     <a href="#try-it-yourself">App Demo</a> •
-    <a href="#prerequisites">Prerequisites</a> •
-    <a href="#clone-repository">Clone Repository</a> •
-    <a href="#stacks">Stacks</a> •
-    <a href="#excelsior-code-by-luís-felipe">Author</a>
+    <a href="#-prerequisites">Prerequisites</a> •
+    <a href="#-clone-repository">Clone Repository</a> •
+    <a href="#-stacks">Stacks</a> •
+    <a href="#excelsior-code--by-luís-felipe">Author</a>
 </h4>
 <br>
 
@@ -29,9 +29,9 @@
 
 ## [⚡TRY IT YOURSELF⚡](https://chat-rooms-socket.netlify.app/)
 <div align="center">
-    <img alt="print" height='500rem' src="./github/chat-rooms-print1.png">
-    <img alt="gif-1" height='500rem' src="./github/chat-rooms-print2.png"><br>
-    <img alt="gif-2" width="900rem"  src="./github/chat-rooms-gif.gif">
+    <img alt="print" height='500rem' width="450rem" src="./github/chat-rooms-print1.png">
+    <img alt="gif-1" height='500rem' width="450rem" src="./github/chat-rooms-print2.png"><br>
+    <img alt="gif-2" width="950rem"  src="./github/chat-rooms-gif.gif">
 </div>
 
 ## 
@@ -97,7 +97,8 @@ npm start
 </span><br><br><br>
 
 <hr>
-<h4 align="center"> Excelsior code by Luís Felipe
-
+<div align="center">
+<h4>Excelsior code 💙 by Luís Felipe</h4>
+ 
 [🪐 See my LinkedIn 🪐](https://www.linkedin.com/in/luisf-csdev/)
-</h4>
+</div>
